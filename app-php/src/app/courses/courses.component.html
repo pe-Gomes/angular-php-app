@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <label>
+      Curso
+      <input type="text" name="nameCourse" [(ngModel)]="course.nameCourse" />
+    </label>
+    <label>
+      Preço
+      <input
+        type="number"
+        name="priceCourse"
+        [(ngModel)]="course.priceCourse"
+      />
+    </label>
+  </div>
+  <button type="button" (click)="create()">Criar curso</button>
+  <button type="button" (click)="update()">Atualizar</button>
+  <button (click)="this.delete()">Deletar</button>
+  <table border="1">
+    <tr *ngFor="let course of courses">
+      <td>{{ course.nameCourse }}</td>
+      <td>{{ course.priceCourse }}</td>
+      <td><button (click)="select(course)">Selecionar curso</button></td>
+    </tr>
+  </table>
+</div>

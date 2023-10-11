@@ -1,0 +1,17 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 2rem auto;
+}
+
+.container div {
+  margin: 1rem 0;
+}
+
+.container > button {
+  margin-left: 5px;
+}
